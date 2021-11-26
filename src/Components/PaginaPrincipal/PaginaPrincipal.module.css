@@ -1,0 +1,31 @@
+.titulo{
+    text-align: center;
+    font-size: 50px; 
+    margin-bottom: 70px;
+}
+.contenedor{
+    margin-top: 80px;   
+    text-align: center;
+}
+.imagen{
+    animation: giro 8s linear infinite;
+    -webkit-animation: giro 8s linear infinite;
+}
+@keyframes giro{
+
+    0%{
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+}
+    100%{
+        transform: rotateY(364deg);
+        -webkit-transform: rotateY(364deg);
+        -moz-transform: rotateY(364deg);
+        -ms-transform: rotateY(364deg);
+        -o-transform: rotateY(364deg);
+}
+
+}
