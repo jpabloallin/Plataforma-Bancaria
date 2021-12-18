@@ -1,97 +1,117 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Home from './home.png'
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-export class FormularioDashboardEmpleado extends React.Component {
-    render() {
-        return (
-            <div>
-                <div class="container">
+    <title>Dashboard Empleado</title>
+  </head>
+  <body>
+    
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="img/logo.png" alt="logo" width="80" height="80" />
+          </a>
+    
+          <div class="col-md-3 text-end">
+            <a href="">
+              <button type="button" class="btn btn-primary">Cerrar Sesión</button>
+            </a>
+          </div>
+        </header>
+    </div>
 
-                    <div class="row">
+    <div class="container">
 
-                        <div class="col-12">
+        <div class="row">
 
-                            <div class="row">
-                                <h6>Productos</h6>
-                            </div>
+            <div class="col-12">
 
-                            <div class="row">
-                                <h6>Productos Activos</h6>
-                            </div>
+                <div class="row">
+                    <h6>Productos</h6>
+                </div>
 
-                            <div class="row">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">No. Cuenta</th>
-                                            <th scope="col">Monto Disponible</th>
-                                            <th scope="col">Propietario</th>
-                                            <th scope="col">Acciones</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <td>Cuenta No. XXXXXXXXX-X</td>
-                                        <td>$1.000.000</td>
-                                        <td>Nombres Apellidos</td>
-                                        <td><button type="button" class="btn btn-danger">Cancelar Producto</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cuenta No. XXXXXXXXX-X</td>
-                                        <td>$1.000.000</td>
-                                        <td>Nombres Apellidos</td>
-                                        <td><button type="button" class="btn btn-danger">Cancelar Producto</button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                <div class="row">
+                    <h6>Productos Activos</h6>
+                </div>
 
-                        <div class="row">
-                            <h6>Productos Cancelados</h6>
-                        </div>
+                <div class="row">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">No. Cuenta</th>
+                                <th scope="col">Monto Disponible</th>
+                                <th scope="col">Propietario</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <td>Cuenta No. XXXXXXXXX-X</td>
+                                <td>$1.000.000</td>
+                                <td>Nombres Apellidos</td>
+                                <td><button type="button" class="btn btn-danger">Cancelar Producto</button></td>
+                            </tr>
+                            <tr>
+                                <td>Cuenta No. XXXXXXXXX-X</td>
+                                <td>$1.000.000</td>
+                                <td>Nombres Apellidos</td>
+                                <td><button type="button" class="btn btn-danger">Cancelar Producto</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                        <div class="row">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">No. Cuenta</th>
-                                        <th scope="col">Monto Disponible</th>
-                                        <th scope="col">Propietario</th>
-                                        <th scope="col">Acciones</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <td>Cuenta No. XXXXXXXXX-X</td>
-                                    <td>$1.000.000</td>
-                                    <td>Nombres Apellidos</td>
-                                    <td><button type="button" class="btn btn-warning">Reactivar Producto</button></td>
-                                </tr>
-                                <tr>
-                                    <td>Cuenta No. XXXXXXXXX-X</td>
-                                    <td>$1.000.000</td>
-                                    <td>Nombres Apellidos</td>
-                                    <td><button type="button" class="btn btn-warning">Reactivar  Producto</button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="row">
+                    <h6>Productos Cancelados</h6>
+                </div>
 
-                    <div class="row">
-                        <h6>Solicitudes Pendientes por Activar</h6>
-                    </div>
+                <div class="row">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">No. Cuenta</th>
+                                <th scope="col">Monto Disponible</th>
+                                <th scope="col">Propietario</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <td>Cuenta No. XXXXXXXXX-X</td>
+                                <td>$1.000.000</td>
+                                <td>Nombres Apellidos</td>
+                                <td><button type="button" class="btn btn-warning">Reactivar Producto</button></td>
+                            </tr>
+                            <tr>
+                                <td>Cuenta No. XXXXXXXXX-X</td>
+                                <td>$1.000.000</td>
+                                <td>Nombres Apellidos</td>
+                                <td><button type="button" class="btn btn-warning">Reactivar  Producto</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                    <div class="row">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col">No. Cuenta</th>
-                                    <th scope="col">Monto Disponible</th>
-                                    <th scope="col">Propietario</th>
-                                    <th scope="col">Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                <div class="row">
+                    <h6>Solicitudes Pendientes por Activar</h6>
+                </div>
+
+                <div class="row">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">No. Cuenta</th>
+                                <th scope="col">Monto Disponible</th>
+                                <th scope="col">Propietario</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                                 <td>Cuenta No. XXXXXXXXX-X</td>
                                 <td>$1.000.000</td>
                                 <td>Nombres Apellidos</td>
@@ -285,8 +305,21 @@ export class FormularioDashboardEmpleado extends React.Component {
                 </div>
 
             </div>
-        )
-    }
-}
 
-export default FormularioDashboardEmpleado
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
